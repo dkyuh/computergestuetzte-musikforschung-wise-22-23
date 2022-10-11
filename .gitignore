@@ -1,0 +1,5 @@
+*.DS_Store
+*_private_*
+*.ipynb_checkpoints*
+*.obsidian*
+/templates
