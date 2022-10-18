@@ -1,6 +1,7 @@
 In Codeblocks kann jeglicher Python-Code ausgeführt werden:
 
 
+
 ```python
 2 + 2
 ```
@@ -26,7 +27,7 @@ In Codeblocks kann jeglicher Python-Code ausgeführt werden:
 
 
 
-    0.75
+	0.75
 
 
 
@@ -47,6 +48,7 @@ print(75 / 100)
 
 
 ## Numpy
+
 
 
 ```python
