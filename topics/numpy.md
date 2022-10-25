@@ -1,6 +1,7 @@
 # Numpy
 
 
+
 ```python
 import numpy as np
 ```
@@ -9,6 +10,7 @@ import numpy as np
 
 ### elementweise Operationen
 
+
 ```python
 # liste
 l = [5, 2, 50, 1]
@@ -16,12 +18,14 @@ l = [5, 2, 50, 1]
 a = np.array([5, 2, 50, 1])
 ```
 
+
 ```python
 # `append`
 l + [40, 100, 398, 4]
 ```
 
     [5, 2, 50, 1, 40, 100, 398, 4]
+
 
 
 ```python
@@ -32,6 +36,7 @@ a + np.array([40, 100, 398, 4])
 ```
 
     array([ 45, 102, 448,   5])
+
 
 
 ```python
@@ -54,6 +59,7 @@ print(np.logical_xor(a > 4, np.array([False, True, True, False])))
     [ True False  True False]
     [ True  True False False]
 
+
 ```python
 # listen elementweise (mehrere moeglichkeiten):
 num = 20
@@ -67,6 +73,7 @@ l
     [100, 40, 1000, 20]
 
 
+
 ```python
 for i, el in enumerate(l): # --> enumerate in topic Python
     print(i, el)
@@ -78,6 +85,7 @@ for i, el in enumerate(l): # --> enumerate in topic Python
     3 20
 
 (Siehe auch: [`enumerate`](/topics/python.md#`enumerate`))
+
 
 
 ```python
@@ -95,6 +103,7 @@ for el_1, el_2 in zip(l_1, l_2):
 (Siehe auch: [`zip`](/topics/python.md#`zip`))
 
 
+
 ```python
 # list-comprehensions
 [a * b for a, b in zip(l, [40, 100, 398, 4])]
@@ -103,6 +112,7 @@ for el_1, el_2 in zip(l_1, l_2):
     [4000, 4000, 398000, 80]
 
 (Siehe auch: [List comprehensions](topics/python.md#List%20comprehensions))
+
 
 
 ```python
@@ -115,10 +125,10 @@ for a, b in zip(l, [40, 100, 398, 4]):
     398000
     80
 
-
 ### Datentypen
 
 In Listen bleiben die Datentypen aller Elemente erhalten.
+
 
 ```python
 [0.1, 0, 'a', True]
@@ -126,8 +136,8 @@ In Listen bleiben die Datentypen aller Elemente erhalten.
 
     [0.1, 0, 'a', True]
 
-
 Bei NumPy-Arrays werden die Datentypen der Elemente aneinander angeglichen.
+
 
 ```python
 print(np.array([0.1, 0, 'a', True]))
@@ -145,7 +155,21 @@ print(np.array([True]))
     [ True]
 
 
+```python
+# explizite datentyp-angabe
+
+np.array([1.0, 2.0, 3.0], dtype=int)
+```
+
+
+
+
+    array([1, 2, 3])
+
+
+
 ### Recheneffizienz
+
 
 ```python
 size = 10e7
@@ -154,6 +178,7 @@ a_1 = np.linspace(10, 59, int(size))
 a_2 = np.linspace(100, 59, int(size))
 ```
 
+
 ```python
 %timeit a_1 * a_2
 ```
@@ -161,10 +186,12 @@ a_2 = np.linspace(100, 59, int(size))
     21.4 ms ± 184 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 
 
+
 ```python
 l_1 = a_1.tolist()
 l_2 = a_2.tolist()
 ```
+
 
 ```python
 %timeit [a * b for a, b in zip(l_1, l_2)]
@@ -172,8 +199,8 @@ l_2 = a_2.tolist()
 
     1.06 s ± 11.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
-
 ## Arrays erstellen
+
 
 ```python
 np.array([1, 2, 3, 4])
@@ -182,12 +209,14 @@ np.array([1, 2, 3, 4])
     array([1, 2, 3, 4])
 
 
+
 ```python
 np.arange(10, 100, 3) # for (i = 10; i < 100; i += 3)
 ```
 
     array([10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43, 46, 49, 52, 55, 58,
            61, 64, 67, 70, 73, 76, 79, 82, 85, 88, 91, 94, 97])
+
 
 
 ```python
@@ -204,14 +233,15 @@ np.linspace(10, 100, 30)
             96.89655172, 100.        ])
 
 
+
 ```python
 np.geomspace(1, 10, 5)
 ```
 
     array([ 1.        ,  1.77827941,  3.16227766,  5.62341325, 10.        ])
 
-
 ## Multidimensionale Arrays
+
 
 ```python
 newshape = (5, 4)
@@ -225,12 +255,13 @@ np.reshape(np.linspace(10, 100, newshape[0] * newshape[1]), newshape)
            [ 66.84210526,  71.57894737,  76.31578947,  81.05263158],
            [ 85.78947368,  90.52631579,  95.26315789, 100.        ]])
 
-
 ## shapes
+
 
 ```python
 l = [1, 2, 3, 4]
 ```
+
 
 ```python
 len(l)
@@ -239,9 +270,11 @@ len(l)
     4
 
 
+
 ```python
 a = np.array([1, 2, 3, 4])
 ```
+
 
 ```python
 len(a)
@@ -250,11 +283,13 @@ len(a)
     4
 
 
+
 ```python
 a.shape
 ```
 
     (4,)
+
 
 
 ```python
@@ -267,10 +302,10 @@ a.shape
 
     (5, 4)
 
-
 ## Auf Elemente zugreifen
 
 ### Element-Zugriff bei eindimensionalen Arrays
+
 
 ```python
 a = np.arange(30, 400, 4)
@@ -339,15 +374,223 @@ print(a[::-2])
      254 246 238 230 222 214 206 198 190 182 174 166 158 150 142 134 126 118
      110 102  94  86  78  70  62  54  46  38  30]
 
-
 ### Element-Zugriff bei multidimensionalen Arrays
 
-```python
-# auf bereiche zugreifen
-```
-
-### egal wie viele Dimensionen
 
 ```python
-# boolsche Indizes
+a = np.reshape(np.arange(0, 28), (4, 7))
+a
 ```
+
+
+
+
+    array([[ 0,  1,  2,  3,  4,  5,  6],
+           [ 7,  8,  9, 10, 11, 12, 13],
+           [14, 15, 16, 17, 18, 19, 20],
+           [21, 22, 23, 24, 25, 26, 27]])
+
+
+
+
+```python
+print(a, '\n')
+
+print(a[2], '\n')
+
+print(a[2][3], '\n')
+
+print(a[2, 3], '\n')
+
+print(a[2, 3:4], '\n')
+
+print(a[2:4, 3:5], '\n') 
+```
+
+    [[ 0  1  2  3  4  5  6]
+     [ 7  8  9 10 11 12 13]
+     [14 15 16 17 18 19 20]
+     [21 22 23 24 25 26 27]] 
+    
+    [14 15 16 17 18 19 20] 
+    
+    17 
+    
+    17 
+    
+    [17] 
+    
+    [[17 18]
+     [24 25]] 
+    
+
+
+#### `np.newshape`
+
+
+```python
+a_1 = np.array([1, 2, 3, 4])
+a_2 = np.array([[10],
+                [20],
+                [30],
+                [40]])
+
+a_1 * a_2
+```
+
+
+
+
+    array([[ 10,  20,  30,  40],
+           [ 20,  40,  60,  80],
+           [ 30,  60,  90, 120],
+           [ 40,  80, 120, 160]])
+
+
+
+
+```python
+# np.newaxis
+
+a_1 = np.array([1, 2, 3, 4])
+a_2 = np.array([10, 20, 30, 40])
+
+a_1 * a_2[:, np.newaxis]
+```
+
+
+
+
+    array([[ 10,  20,  30,  40],
+           [ 20,  40,  60,  80],
+           [ 30,  60,  90, 120],
+           [ 40,  80, 120, 160]])
+
+
+
+
+```python
+a_2[:, np.newaxis]
+```
+
+
+
+
+    array([[10],
+           [20],
+           [30],
+           [40]])
+
+
+
+
+```python
+a_1 * np.reshape(a_2, (4, 1))
+```
+
+
+
+
+    array([[ 10,  20,  30,  40],
+           [ 20,  40,  60,  80],
+           [ 30,  60,  90, 120],
+           [ 40,  80, 120, 160]])
+
+
+
+
+```python
+np.reshape(a_2, (4, 1))
+```
+
+
+
+
+    array([[10],
+           [20],
+           [30],
+           [40]])
+
+
+
+### egal wie viele Dimensionen: boolsche Indizes
+
+
+```python
+a_1 = np.array([1, 2, 3, 4])
+a_2 = np.array([10, 20, 30, 40])
+a_ = a_1 * a_2[:, np.newaxis]
+
+print(a_, '\n')
+
+b = np.array([[False, True, False, True],
+              [False, False, True, False],
+              [False, False, False, False],
+              [True, True, True, False]])
+
+print(b, '\n')
+
+print(a_[b], '\n')
+
+b = a_ > 80
+
+print(b, '\n')
+
+a_[a_ > 80]
+
+a_[b]
+```
+
+    [[ 10  20  30  40]
+     [ 20  40  60  80]
+     [ 30  60  90 120]
+     [ 40  80 120 160]] 
+    
+    [[False  True False  True]
+     [False False  True False]
+     [False False False False]
+     [ True  True  True False]] 
+    
+    [ 20  40  60  40  80 120] 
+    
+    [[False False False False]
+     [False False False False]
+     [False False  True  True]
+     [False False  True  True]] 
+    
+
+
+
+
+
+    array([ 90, 120, 120, 160])
+
+
+
+
+```python
+c = np.random.randint(0, 20, 20)
+
+print(c, '\n')
+
+print(c[c > 5])
+```
+
+    [11 17 12 12  3 10  2  7 11  9 17 12 16  8  3  2 16  0 18  5] 
+    
+    [11 17 12 12 10  7 11  9 17 12 16  8 16 18]
+
+
+
+```python
+c > 5
+```
+
+
+
+
+    array([ True,  True,  True,  True, False,  True, False,  True,  True,
+            True,  True,  True,  True,  True, False, False,  True, False,
+            True, False])
+
+
