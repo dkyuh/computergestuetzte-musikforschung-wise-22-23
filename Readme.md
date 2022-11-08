@@ -23,6 +23,10 @@
 - Diskrete Fourier Transformation
 - (Discrete) Short Time Fourier Transform
 
+## Tutorium
+
+- [TCGM__01](/tutorium/TCGM__01.md) ([.ipynb](/tutorium/TCGM__01.ipynb))
+
 ### Future Topics
 
 - Chord Recognition
