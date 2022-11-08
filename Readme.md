@@ -4,7 +4,8 @@
 
 - **11. Oktober 2022**: [Introduction](/sessions/session_00_intro.md)
 - **18. Oktober 2022**: [NumPy Introduction](/sessions/session_01_numpy_introduction.md)
-- **25. Oktober 2022**: [session_01_np_mdim_arr_gen_sin](sessions/session_01_np_mdim_arr_gen_sin.md)
+- **25. Oktober 2022**: [NumPy multi-dim. Arrays | Generate Sine](/sessions/session_02_np_mdim_arr_gen_sin.md)
+- **8. November 2022**: [Freq-MIDI | time-framing](/sessions/session_03_freqmidipitch_timeframing.md)
 
 ## Topics
 
@@ -15,9 +16,9 @@
 - [Jupyter Notebooks](/topics/jupyter_notebooks.md) ([.ipynb](/topics/jupyter_notebooks.ipynb))
 - [Matplotlib](/topics/matplotlib.md) ([.ipynb](/topics/matplotlib.ipynb))
 - [Sinus generieren](/topics/generate_sine_wave.md) ([.ipynb](/topics/generate_sine_wave.ipynb))
+- [Frequenzen - Pitches - MIDI](topics/freq_midi.md) ([.ipynb](/topics/freq_midi.ipynb))
+- [Time-Framing](/topics/time_framing.md) ([.ipynb](/topics/time_framing.ipynb))
 
-- Frequenzen - Pitches - MIDI
-- Time-Framing
 - komplexe Zahlen
 - Diskrete Fourier Transformation
 - (Discrete) Short Time Fourier Transform

@@ -90,3 +90,32 @@ plt.show()
 ![png](matplotlib_files/matplotlib_10_0.png)
     
 
+
+## Achsenbeschriftung
+
+siehe: [MIDI-Pitch - Frequenz](/topics/freq_midi.md#^e45f90)
+
+
+```python
+# plt.xlabel('xlabel')
+# plt.ylabel('ylabel')
+```
+
+## Plot-x-y
+
+siehe: [MIDI-Pitch - Frequenz](/topics/freq_midi.md#^7159a7)
+
+```python
+x = np.linspace(-10, 10, 200)
+y = x ** 2
+
+# plt.plot(y) # x-range von ? 0-200 ?
+plt.plot(x, y) # richtig: x-range von -10 - 10
+plt.show()
+```
+
+
+    
+![png](matplotlib_files/matplotlib_15_0.png)
+    
+
