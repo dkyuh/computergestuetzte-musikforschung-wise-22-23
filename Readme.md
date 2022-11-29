@@ -6,6 +6,7 @@
 - **18. Oktober 2022**: [NumPy Introduction](/sessions/session_01_numpy_introduction.md)
 - **25. Oktober 2022**: [NumPy multi-dim. Arrays | Generate Sine](/sessions/session_02_np_mdim_arr_gen_sin.md)
 - **8. November 2022**: [Freq-MIDI | time-framing](/sessions/session_03_freqmidipitch_timeframing.md)
+- **29. November 2022**: [komplexe Zahlen](/sessions/session_04_komplexe_zahlen.md)
 
 ## Topics
 
@@ -18,8 +19,11 @@
 - [Sinus generieren](/topics/generate_sine_wave.md) ([.ipynb](/topics/generate_sine_wave.ipynb))
 - [Frequenzen - Pitches - MIDI](topics/freq_midi.md) ([.ipynb](/topics/freq_midi.ipynb))
 - [Time-Framing](/topics/time_framing.md) ([.ipynb](/topics/time_framing.ipynb))
+- [komplexe Zahlen Folien](/topics/komplexe_zahlen_folien%20slides.pdf)
+	- [01: Zahlenstrahl - Zahlenebene](/topics/01_zahlenstrahl_zahlenflaeche.ggb)
+	- [02: conjugate - inverse](/topics/02_conjugate_inverse.ggb)
+	- [03: magnitude - angle](/topics/03_laenge_winkel.ggb)
 
-- komplexe Zahlen
 - Diskrete Fourier Transformation
 - (Discrete) Short Time Fourier Transform
 
