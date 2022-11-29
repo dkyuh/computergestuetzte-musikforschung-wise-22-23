@@ -30,7 +30,8 @@
 ## Tutorium
 
 - [TCGM__01](/tutorium/TCGM__01.md) ([.ipynb](/tutorium/TCGM__01.ipynb))
-
+- [TCGM__02](/tutorium/TCGM__02.ipynb)
+- [TCGM__03](/tutorium/TCGM__03.ipynb)
 ### Future Topics
 
 - Chord Recognition
