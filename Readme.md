@@ -7,6 +7,7 @@
 - **25. Oktober 2022**: [NumPy multi-dim. Arrays | Generate Sine](/sessions/session_02_np_mdim_arr_gen_sin.md)
 - **8. November 2022**: [Freq-MIDI | time-framing](/sessions/session_03_freqmidipitch_timeframing.md)
 - **29. November 2022**: [komplexe Zahlen](/sessions/session_04_komplexe_zahlen.md)
+- **6. Dezember 2022**: [Eulersche Identität](/sessions/session_05_eulersche_identitaet.md)
 
 ## Topics
 
@@ -23,7 +24,12 @@
 	- [01: Zahlenstrahl - Zahlenebene](/topics/01_zahlenstrahl_zahlenflaeche.ggb)
 	- [02: conjugate - inverse](/topics/02_conjugate_inverse.ggb)
 	- [03: magnitude - angle](/topics/03_laenge_winkel.ggb)
+- [Eulersche Identität Folien](/topics/eulersche_identitaet%20slides.pdf)
 
+---
+
+- Eulersche Formel
+- Integral und Riemansche Summe der Multiplikation zweier Funktionen als Ähnlichkeitsmaß
 - Diskrete Fourier Transformation
 - (Discrete) Short Time Fourier Transform
 
