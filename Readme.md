@@ -8,6 +8,7 @@
 - **8. November 2022**: [Freq-MIDI | time-framing](/sessions/session_03_freqmidipitch_timeframing.md)
 - **29. November 2022**: [komplexe Zahlen](/sessions/session_04_komplexe_zahlen.md)
 - **6. Dezember 2022**: [Eulersche Identität](/sessions/session_05_eulersche_identitaet.md)
+- **13. Dezember 2022**: [Eulersche Formel | Ähnlichkeitsmaß | Winding Machine](/sessions/session_06_eulerscheformel_aehnlichkeitsmass_windingmachine.md)
 
 ## Topics
 
@@ -25,11 +26,15 @@
 	- [02: conjugate - inverse](/topics/02_conjugate_inverse.ggb)
 	- [03: magnitude - angle](/topics/03_laenge_winkel.ggb)
 - [Eulersche Identität Folien](/topics/eulersche_identitaet%20slides.pdf)
+- [Exponentialfunktion Kreis Folien](/topics/exponentialfunktion_kreis_folien.pdf)
+	- [04: komplexe Funktionen](/topics/04_funktionen.ggb)
+	- [05: imaginäre e-funktion](/topics/05_imaginaere_e-funktion.ggb)
+- [Integral und Riemansche Summe der Multiplikation zweier Funktionen als Ähnlichkeitsmaß](/topics/aehnlichkeitsmass.md) ([.ipynb](/topics/aehnlichkeitsmass.ipynb))
+- [Winding Machine](/topics/winding_machine.md) ([.ipynb](/topics/winding_machine.ipynb))
 
 ---
 
-- Eulersche Formel
-- Integral und Riemansche Summe der Multiplikation zweier Funktionen als Ähnlichkeitsmaß
+
 - Diskrete Fourier Transformation
 - (Discrete) Short Time Fourier Transform
 
