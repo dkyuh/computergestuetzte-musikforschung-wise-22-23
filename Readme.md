@@ -9,6 +9,7 @@
 - **29. November 2022**: [komplexe Zahlen](/sessions/session_04_komplexe_zahlen.md)
 - **6. Dezember 2022**: [Eulersche Identität](/sessions/session_05_eulersche_identitaet.md)
 - **13. Dezember 2022**: [Eulersche Formel | Ähnlichkeitsmaß | Winding Machine](/sessions/session_06_eulerscheformel_aehnlichkeitsmass_windingmachine.md)
+- **20. Dezember 2022**: [DFT | STFT](/sessions/session_07_dft_stft.md)
 
 ## Topics
 
@@ -31,12 +32,10 @@
 	- [05: imaginäre e-funktion](/topics/05_imaginaere_e-funktion.ggb)
 - [Integral und Riemansche Summe der Multiplikation zweier Funktionen als Ähnlichkeitsmaß](/topics/aehnlichkeitsmass.md) ([.ipynb](/topics/aehnlichkeitsmass.ipynb))
 - [Winding Machine](/topics/winding_machine.md) ([.ipynb](/topics/winding_machine.ipynb))
+- [DFT](/topics/dft.md) ([.ipynb](/topics/dft.ipynb))
+- [STFT](/topics/stft.md) ([.ipynb](/topics/stft.ipynb))
 
 ---
-
-
-- Diskrete Fourier Transformation
-- (Discrete) Short Time Fourier Transform
 
 ## Tutorium
 
